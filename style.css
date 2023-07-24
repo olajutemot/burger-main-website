@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+/* nav styling starts here */
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 0.8rem;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container a {
+  text-decoration: none;
+}
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo a {
+  font-size: 1.5rem;
+  color: black;
+  font-weight: 300;
+}
+.container ul {
+  /* border: 2px solid black; */
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  width: 25%;
+}
+li a {
+  color: black;
+  font-weight: 300;
+}
+/* nav styling ends here */
+/* -------------------------------- */
+/* header styling start here */
+#header {
+  background: url(./assets/burger-bcg.jpg);
+  background-position: center;
+  height: 500px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.header-text {
+  font-size: 2.8rem;
+  letter-spacing: 0.2em;
+  color: rgb(74, 150, 164);
+}
+.header-button a {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(41, 37, 37);
+  padding: 1rem 1.5rem;
+  border-radius: 5px;
+}
+/* header styling end here */
+/* -------------------------------- */
+/* quote section styling start here */
+.quote-1 {
+  background-color: rgb(41, 37, 37);
+  color: white;
+  height: 20%;
+  text-align: center;
+  padding: 100px;
+}
+/* quote section styling end here */
+/* -------------------------------- */
+/* main styling start here */
+#about {
+  height: 50%;
+  text-align: justify;
+  padding: 80px 200px;
+}
+#about h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+.desktop {
+  line-height: 2;
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  color: rgb(0, 0, 0, 0.6);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+.mobile {
+  display: none;
+}
+.photos-1,
+.photos-2 {
+  display: flex;
+  width: 100%;
+}
+.photos img {
+  width: 50%;
+}
+.quote-2 {
+  color: black;
+  background-color: rgb(110, 236, 194);
+  height: 20%;
+  text-align: center;
+  padding: 100px;
+}
+.quote-2 p {
+  letter-spacing: 2px;
+  font-size: 1.2rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+/* contact us styling starts here */
+/* -------------------------------- */
+#contact {
+  width: 60%;
+  margin: 0 auto;
+}
+#contact h2 {
+  text-align: center;
+  margin-top: 3rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+label {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+input[id] {
+  width: 100%;
+  padding: 5px;
+  height: 30px;
+  border: 1px solid rgb(63, 59, 59, 0.3);
+  display: block;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  height: 250px;
+  border: 1px solid rgb(63, 59, 59, 0.3);
+  display: block;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+input[value] {
+  font-size: 1.5rem;
+  padding: 0.3em;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  background-color: rgb(63, 59, 59);
+}
+/* main styling end here */
+/* -------------------------------- */
+/* footer styling start here */
+#footer {
+  background-color: rgb(63, 59, 59);
+  padding: 1.5rem;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+}
+/* -----------------------------
+mediaquery
+----------------------------- */
+@media screen and (max-width: 800px) {
+  .container ul {
+    display: none;
+  }
+  .logo {
+    margin: 0 auto;
+  }
+  #header {
+    background-size: cover;
+    height: 350px;
+  }
+  .header-text {
+    font-size: 1.5rem;
+    letter-spacing: 0.1;
+  }
+  #about {
+    padding: 20px 50px;
+  }
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+    line-height: 2;
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    color: rgb(0, 0, 0, 0.6);
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+  }
+  .photos-1,
+  .photos-2 {
+    display: block;
+    width: 100%;
+  }
+  .photos img {
+    display: block;
+    width: inherit;
+    margin: 0 auto;
+  }
+  .quote-1,
+  .quote-2 {
+    padding: 50px;
+  }
+  textarea {
+    height: 100px;
+  }
+}
